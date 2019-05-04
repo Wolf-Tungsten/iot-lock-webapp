@@ -43,7 +43,7 @@ export default class UnlockPage extends React.Component {
         let key = await window.axios.get(`/admin/key?uuid=${device.uuid}`)
         Toast.hide()
         if(key.data.success){
-            this.setState({key:key.data.result.key})
+            this.setState({key:key.data.result.key, failed:false})
         } else {
             this.setState({failed:true})
         }
