@@ -1,0 +1,13 @@
+#wx-login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hint {
+    margin-top: 30px;
+    font-size: 20px;
+    color:#888;
+}
